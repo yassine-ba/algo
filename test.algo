@@ -1,0 +1,26 @@
+ALGORITHM ck
+VAR
+    ch : STRING ;
+    i : INTEGER ;
+    j : INTEGER ;
+    k :INTEGER ;
+    num1 : INTEGER :=0 ;
+    num2 :INTEGER :=0 ;
+BEGIN
+ read (ch) ;
+ FOR i FROM 0 TO ch.length STEP 1 DO
+ IF (ch[i] = (' ')) THEN
+ num1 := num1 +1
+    
+ END_IF
+ END_FOR
+
+ FOR j FROM 0 TO ch.length step 1 DO
+ IF (ch[j] ='a' || ch[j] ='A' || ch[j] ='e' || ch[j] ='E' || ch[j] ='j' || ch[j] ='I' || ch[j] ='o' || ch[j] ='O' || ch[j] ='u' || ch[j] ='U' || ch[j] ='y' || ch[j] ='Y') THEN
+     num2 := num2+1
+ END_IF
+ END_FOR
+ write("length of sentence =",ch.length)
+ write("number of words =",num1+1)
+ write("number of vowels" ,num2)
+END
